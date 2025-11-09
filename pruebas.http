@@ -1,0 +1,52 @@
+### 🧠 Health Check
+GET http://localhost:8000
+Content-Type: application/json
+
+
+### 👤 Registro de usuario
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "mateo@example.com",
+  "password": "1234"
+}
+
+
+### 🔑 Login de usuario
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "mateo@example.com",
+  "password": "1234"
+}
+
+
+### 🪙 Registrar resultado de juego (ganó)
+POST http://localhost:8000/api/games/record
+Content-Type: application/json
+
+{
+  "email": "mateo@example.com",
+  "game": "dices",
+  "result": "win",
+  "amount": 200
+}
+
+
+### 💸 Registrar resultado de juego (perdió)
+POST http://localhost:8000/api/games/record
+Content-Type: application/json
+
+{
+  "email": "mateo@example.com",
+  "game": "dices",
+  "result": "lose",
+  "amount": 100
+}
+
+
+### 📜 Consultar historial de juegos
+GET http://localhost:8000/api/games/history?email=mateo@example.com
+Content-Type: application/json
