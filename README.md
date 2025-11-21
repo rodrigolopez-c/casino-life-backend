@@ -37,15 +37,11 @@ PORT=8000
 
 3. Levantar PostgreSQL con Docker
 docker compose up -d
-
-4. npm run dev
-
---BASE DE DATOS---
-CADA VEZ QUE EDITES O CREES UNA TABLA HAZ LO SIGUIENTE:
-1. npx drizzle-kit generate.  #Esto genera los archivos SQL dentro de /drizzle.
-2. npx drizzle-kit push.  #Para aplicar los cambios en la base de datos:
+4. npx drizzle-kit generate.  #Esto genera los archivos SQL dentro de /drizzle.
+5. npx drizzle-kit push.  #Para aplicar los cambios en la base de datos:
+6. docker compose up -d
+7. npm run dev
 
 ---AUTENTICACION JWT---
 Cada ruta protegida requiere un header:
 Authorization: Bearer <tu_token_jwt>
-
