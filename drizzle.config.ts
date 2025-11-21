@@ -3,10 +3,12 @@ import type { Config } from "drizzle-kit";
 export default {
   schema: "./src/db/schema.ts",
   out: "./drizzle",
-  dialect: "postgresql", // 👈 ESTE CAMPO ES OBLIGATORIO
+  dialect: "postgresql",
   dbCredentials: {
-    url:
-      process.env.DATABASE_URL ||
-      "postgresql://casino_admin:casino123@localhost:5432/casino_life",
+    host: "localhost",
+    port: 5432,
+    user: "casino_admin",
+    password: "casino123",
+    database: "casino_life",
   },
 } satisfies Config;
