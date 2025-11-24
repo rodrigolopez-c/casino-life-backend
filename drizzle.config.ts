@@ -5,11 +5,6 @@ export default {
   out: "./drizzle",
   dialect: "postgresql",
   dbCredentials: {
-    host: "localhost",
-    port: 5432,
-    user: "casino_admin",
-    password: "casino123",
-    database: "casino_life",
-    ssl: false,
+    url: process.env.DATABASE_URL!,
   },
 } satisfies Config;
