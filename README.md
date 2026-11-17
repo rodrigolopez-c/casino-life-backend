@@ -1,6 +1,7 @@
 Backend del proyecto Casino Life, desarrollado en Node.js (Express + TypeScript) con PostgreSQL + Drizzle ORM y documentación automática con Swagger.
 
 --ESTRUCTURA DEL PROYECTO--
+```
 casino-life-backend/
 │
 ├── docker-compose.yml.  # Configuración de la base de datos PostgreSQL
@@ -24,7 +25,7 @@ casino-life-backend/
 ├── package.json
 ├── tsconfig.json
 └── README.md
-
+```
 
 ---CONFIGURACION INICIAL---
 1. npm install
